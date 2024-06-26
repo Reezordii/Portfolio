@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Romain STEFANI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Romain STEFANI</h1>
+            <p>Développeur Web</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">À Propos</a></li>
+            <li><a href="#skills">Compétences</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>À Propos</h2>
+        <div class="card">
+            <p>Développeur web passionné par les nouvelles technologies et l'innovation.</p>
+            <ul>
+                <li>Date de naissance : 28 novembre 2004 (19 ans)</li>
+                <li>Email : romain.stefani04@gmail.com</li>
+                <li>Adresse : 287 chemin du magnanon, Montauroux 83440</li>
+                <li>Langues : Français (langue maternelle), Anglais (niveau B2), Espagnol (niveau B1)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Compétences</h2>
+        <div class="card">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="skill-bar" data-skill="90%"></div>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+                <div class="skill-bar" data-skill="85%"></div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="skill-bar" data-skill="80%"></div>
+            </div>
+            <div class="skill">
+                <h3>Java</h3>
+                <div class="skill-bar" data-skill="75%"></div>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+                <div class="skill-bar" data-skill="70%"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Expériences Professionnelles</h2>
+        <div class="card">
+            <div class="experience-item">
+                <h3>Développeur Web en alternance - Netisys, Valbonne</h3>
+                <p>Développeur d’application full web, Maquettage pour aide au choix de la technologie, Aide à la rédaction des spécifications.</p>
+            </div>
+            <div class="experience-item">
+                <h3>Stage de 3ème - Thales Alenia Space, Cannes-la-Bocca</h3>
+                <p>Observation d’un ingénieur en automatique et informatique industriel.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projets</h2>
+        <div class="projects-container">
+            <div class="card project-item" onclick="toggleProject(this)">
+                <h3>Jeu Unreal Engine 5 (en cours) <i class="fas fa-chevron-right chevron"></i></h3>
+                <div class="project-content">
+                    <p>Dans le cadre d'un projet personnel, nous nous sommes lancés avec <a href="https://guillaume170604.github.io/MyPortfolio" target="_blank" style="text-decoration: none;color: #1d69b5;font-weight: bold;">Guillaume FAURE</a> dans la programmation d'un jeu 3D avec le moteur UnrealEngine5, et l'utilisation de C++.</p>
+                </div>
+            </div>
+            <div class="card project-item" onclick="toggleProject(this)">
+                <h3>Jeu 2D Feu&Eau <i class="fas fa-chevron-right chevron"></i></h3>
+                <div class="project-content">
+                    <p>Dans le cadre de ma première année de BUT Informatique, j'ai développé en équipe (<a href="https://remim06.github.io/portfolio.html" target="_blank" style="text-decoration: none;color: #1d69b5;font-weight: bold;">Rémi MATHIEU</a>, <a href="https://guillaume170604.github.io/MyPortfolio" target="_blank" style="text-decoration: none;color: #1d69b5;font-weight: bold;">Guillaume FAURE</a>) un jeu se jouant à 2 joueurs en JAVA et JAVAFX.</p>
+                </div>
+            </div>
+            <div class="card project-item" onclick="toggleProject(this)">
+                <h3>Application AndroidStudio <i class="fas fa-chevron-right chevron"></i></h3>
+                <div class="project-content">
+                    <p>Dans le cadre de ma deuxième année de BUT Informatique, j'ai développé avec <a href="https://guillaume170604.github.io/MyPortfolio" target="_blank" style="text-decoration: none;color: #1d69b5;font-weight: bold;">Guillaume FAURE</a>, une application sur le thème de Pokémon.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <div class="card">
+            <form>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Romain STEFANI. Tous droits réservés.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
